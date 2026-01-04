@@ -17,7 +17,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('${API}/api/auth/login', formData);
+            const response = await axios.post(`${API}/api/auth/login`, formData);
             
             // CRITICAL FIX: Save the MongoDB _id to localStorage
             // Your backend sends: { user: { id: user._id, ... } }

@@ -20,7 +20,7 @@ const Signup = () => {
         e.preventDefault();
         try {
             // Connecting to your backend registration route
-            const response = await axios.post('${API}/api/auth/register', formData);
+const response = await axios.post(`${API}/api/auth/register`, formData);
             alert("Account created successfully! Please login.");
             navigate('/login'); // Redirect to login page after success
         } catch (err) {
